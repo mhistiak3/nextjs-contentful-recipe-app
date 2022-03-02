@@ -1,0 +1,69 @@
+.banner {
+  padding: 40px 20px;
+}
+.container {
+  width: 65%;
+  margin: auto;
+}
+
+.banner img {
+  border-radius: 5px;;
+}
+.fetured{
+    position: relative;
+    
+}
+.fetured h1 {
+  background-color: white;
+  color: black;
+  font-size: 28px;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 2px;
+
+  position: absolute;
+  margin-top: -40px;
+  margin-left: -12px;
+}
+.info {
+  margin: 30px 0;
+}
+.info h2 {
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+.info h2 b {
+  font-weight: bold;
+}
+.info h3 {
+  margin-bottom: 5px;
+
+  font-size: 25px;
+}
+.ingredients {
+  display: flex;
+  flex-wrap: wrap;
+}
+.ingredients span {
+  background-color: white;
+  color: black;
+  padding: 5px;
+  margin: 5px;
+  font-size: 16px;
+  border-radius: 3px;
+}
+.method {
+  padding: 10px;
+}
+.method h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+.method h4 {
+  margin: 10px 0;
+  font-size: 23px;
+}
+.method h5 {
+  margin: 5px 0;
+  font-size: 20px;
+}
