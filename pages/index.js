@@ -1,12 +1,26 @@
 import Header from "../components/Header";
 import RecipeList from "../components/RecipeList";
 import { createClient } from "contentful";
+import { useState } from "react";
 
 export default function Home({ recipes }) {
+  const [myRecipes,setRecipes]=useState(recipes)
+
+   const searchRecipe = (searchTerm) => {
+     if (searchTerm === "") {
+       setRecipes(recipes);
+     } else {
+       const filterList = recipes.filter((recipe) =>
+         recipe.fields.title.toLowerCase().includes(searchTerm.toLowerCase())
+       );
+       setRecipes(filterList);
+     }
+   };
+
   return (
     <>
-      <Header />
-      <RecipeList recipes={recipes} />
+      <Header searchRecipe={searchRecipe} />
+      <RecipeList recipes={myRecipes} />
     </>
   );
 }

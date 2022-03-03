@@ -4,7 +4,10 @@ const RecipeDetailsHeader = () => {
   return (
     <>
       <div className={classes.header}>
-        <h1>iA Recipe</h1>
+        <div className={classes.logo}>
+          <img src="../logo.png" alt="" />
+          <h1>iA Recipe</h1>
+        </div>
         <p>
           iA Recipe is bangali food recipe website, <br /> You can get all the
           bangali recipe from this website.

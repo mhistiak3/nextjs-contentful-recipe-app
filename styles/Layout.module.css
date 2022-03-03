@@ -13,10 +13,23 @@
   text-align: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.37);
 }
-.header h1 {
-  margin-bottom: 15px;
-  font-weight: bold;
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.logo img{
+  width: 50px;
+}
+.logo  h1 {
+  font-weight: 700;
   cursor: pointer;
+  margin-left: 10px;
 }
 .header p {
   margin-bottom: 25px;
