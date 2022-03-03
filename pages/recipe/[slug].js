@@ -1,4 +1,4 @@
-import RecipeDetailsHeader from "../../components/recipeDetailsHeader";
+import RecipeDetailsHeader from "../../components/RecipeDetailsHeader";
 import { createClient } from "contentful";
 import classes from "../../styles/RecipeDetails.module.css";
 import Image from "next/image";
@@ -21,6 +21,7 @@ const CookDetails = ({ recipe }) => {
           <div className={classes.fetured}>
             <Image
               src={`https:${featuredImage.fields.file.url}`}
+              alt='Fetured image'
               width={featuredImage.fields.file.details.image.width}
               height={featuredImage.fields.file.details.image.height}
               placeholder="blur"
