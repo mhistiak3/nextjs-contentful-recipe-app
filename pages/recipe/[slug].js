@@ -21,7 +21,7 @@ const CookDetails = ({ recipe }) => {
           <div className={classes.fetured}>
             <Image
               src={`https:${featuredImage.fields.file.url}`}
-              alt='Fetured image'
+              alt="Fetured image"
               width={featuredImage.fields.file.details.image.width}
               height={featuredImage.fields.file.details.image.height}
               placeholder="blur"
@@ -72,6 +72,14 @@ export async function getStaticProps({ params }) {
     content_type: "iARecipe",
     "fields.slug": params.slug,
   });
+  if (!items.length) {
+    return {
+      redirect: {
+        destination: "/",
+        parmanent: false,
+      },
+    };
+  }
   return {
     props: {
       recipe: items[0],
